@@ -9,7 +9,7 @@
   <meta name="author" content="TonyChol">
 
   
-  <meta name="description" content="上机实验2步骤 创建数据库 登陆MySQL：在终端输入命令： mysql -p -u root 输入命令： CREATE DATABASE mysqlTest; 终端提示数据库创建成功： Query OK, 1 row affected (0.02 sec) * &hellip;">
+  <meta name="description" content="数据库实验报告3 本次实验报告的内容是按照要求，建立图书管理系统的数据库。 建立现有图书管理系统数据库(bookmanager)，给出创建这些数据库对象的SQL命令。 建立数据库（bookmanager）,并且建立表格 readers，borrowinf，books 和 readertype， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +65,303 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/11/04/shu-ju-ku-shi-yan-bao-gao-3/">数据库实验报告3</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-11-04T20:33:00+08:00" pubdate data-updated="true">Nov 4<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1 id="section">数据库实验报告3</h1>
+
+<h4 id="section-1">本次实验报告的内容是按照要求，建立图书管理系统的数据库。</h4>
+
+<ol>
+  <li>
+    <p>建立现有图书管理系统数据库(bookmanager)，给出创建这些数据库对象的SQL命令。</p>
+
+    <ul>
+      <li>
+        <p>建立数据库（bookmanager）,并且建立表格 readers，borrowinf，books 和 readertype，最后插入相关数据：</p>
+
+        <pre><code>  CREATE DATABASE bookmanager;
+  USE bookmanager;
+  CREATE TABLE readers(
+ 		编号 VARCHAR(8) NOT NULL,
+ 		姓名 VARCHAR(8) NOT NULL,
+ 		读者类型 int NOT NULL,
+ 		已借数量 int NOT NULL
+ 		);　
+ 		CREATE TABLE borrowinf(
+ 		读者编号 VARCHAR(8) NOT NULL,
+ 		图书编号 VARCHAR(15) NOT NULL,
+ 		借期 DATE NOT NULL,
+ 		还期 DATE //借期可以是空值！
+ 		);
+ 		CREATE TABLE books(
+ 		编号 VARCHAR(15) NOT NULL,
+ 		书名 VARCHAR(42) NOT NULL,
+ 		作者 VARCHAR(8) NOT NULL,
+ 		出版社 VARCHAR(28) NOT NULL,
+ 		定价 FLOAT(4,2) NOT NULL
+ 		);
+ 		 CREATE TABLE readertype
+ 		(类型编号 int,
+ 		类型名称 VARCHAR(8),
+ 		限借阅数量 int,
+ 		借阅期限 int
+ 		);
+</code></pre>
+
+        <p><img src="http://d.pr/i/6NGB.png" alt="" /> </p>
+
+        <p><img src="http://d.pr/i/pHzj.png" alt="" /></p>
+      </li>
+      <li>
+        <p>导入数据</p>
+
+        <ul>
+          <li>
+            <p>可以通过 txt 文档快速导入数据！</p>
+
+            <p>格式如下：</p>
+
+            <pre><code>  LOAD DATA LOCAL INFILE "路径名" INTO TABLE 表格名称(列名1,列名2,列名3,列名4，...);
+</code></pre>
+
+            <p>建立的 txt 文档如图所示：</p>
+
+            <p><img src="http://d.pr/i/FgpM.png" alt="" /></p>
+
+            <p><img src="http://d.pr/i/DYot.png" alt="" /></p>
+
+            <p>例如，在本表格：</p>
+
+            <pre><code>  LOAD DATA LOCAL INFILE "/Users/TonyChol/Desktop/reader.txt" INTO TABLE readers(编号,姓名,读者类型,已借数量);
+			
+  LOAD DATA LOCAL INFILE "/Users/TonyChol/Desktop/borrowinf.txt" INTO TABLE borrowinf(读者编号,图书编号,借期,还期);
+			
+  LOAD DATA LOCAL INFILE "/Users/TonyChol/Desktop/books.txt" INTO TABLE books(编号,书名,作者,出版社,定价);//这里存在一个问题，就是 FLOAT 的小数数位中，整数数位的参数能都省略？
+			
+  LOAD DATA LOCAL INFILE "/Users/TonyChol/Desktop/readertype.txt" INTO TABLE readertype(类型编号,类型名称,限借阅数量,借阅期限);
+</code></pre>
+          </li>
+        </ul>
+
+        <p><img src="http://d.pr/i/hEtY.png" alt="" /></p>
+
+        <p><img src="http://d.pr/i/NwUq.png" alt="" /></p>
+
+        <p><img src="http://d.pr/i/RZrv.png" alt="" /></p>
+
+        <p><img src="http://d.pr/i/LuDc.png" alt="" /></p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>写出完成下列操作的SQL命令。</p>
+
+    <ul>
+      <li>分别建立表readers、books上的主键索引。
+        <ul>
+          <li>首先，主键算是一种索引，更通俗的讲，主键中的记录必须是「NOT NULL」的，而且是「UNIQUE」的。</li>
+          <li>声明主键的方法有两种：
+            <ul>
+              <li>
+                <p>在创建表的时候就给表加上主键：</p>
+
+                <pre><code>  CREATE TABLE 表名 (
+  字段描述等等等... , 
+  PRIMARY KEY(某列名1,某列名2,...));
+</code></pre>
+              </li>
+              <li>
+                <p>也可以更新表结构时为表加上主键：</p>
+
+                <pre><code>  ALTER TABLE 表名 ADD PRIMARY KEY (某列名1,某列名2,...);
+</code></pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>具体操作：˙</p>
+
+            <ul>
+              <li>
+                <p>在 Terminal 中输入：</p>
+
+                <pre><code>  ALTER TABLE readers ADD PRIMARY KEY (编号);
+</code></pre>
+
+                <p>结果出现了意想不到的错误：</p>
+
+                <p>提示：</p>
+
+                <pre><code>       Duplicate entry '20060600' for key 'PRIMARY'
+</code></pre>
+
+                <p><img src="http://d.pr/i/vCsu.png" alt="" /></p>
+
+                <p>后来 Google 之后发现，是原来的「readers」表格中，「编号」列里的数据重复，原因是在创建表的时候定义列的字符长度果断，导致插入的记录（也就是「编号」）重复。 必须修改列中的数据才能插入主键。</p>
+              </li>
+              <li>
+                <p>在修改了列中的记录之后，再次输入插入主键的 SQL 语句，提示成功！</p>
+
+                <p><img src="http://d.pr/i/I5ks.png" alt="" /></p>
+              </li>
+              <li>
+                <p>在 books 表中添加主键，主键是「编号」：</p>
+
+                <p><img src="http://d.pr/i/ehuS.png" alt="" /></p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>给出借阅超期信息单。</p>
+  </li>
+  <li>
+    <p>查询编号为“2005060328”的读者的借阅信息。</p>
+
+    <ul>
+      <li>
+        <p>具体操作：</p>
+
+        <pre><code>  SELECT 读者编号,姓名,图书编号,借期,还期,书名,作者,出版社,定价   
+  FROM borrowinf,books,readers 
+  WHERE borrowinf.读者编号 = readers.编号 AND  
+  books.编号 = borrowinf.图书编号 AND  
+  borrowinf.读者编号 = 2005060328;
+</code></pre>
+      </li>
+    </ul>
+
+    <p><img src="http://d.pr/i/3huH.png" alt="" /></p>
+  </li>
+  <li>
+    <p>查询姓名为“王立群”的读者的借阅信息。</p>
+
+    <ul>
+      <li>
+        <p>具体操作：</p>
+
+        <pre><code>  SELECT 读者编号,姓名,图书编号,借期,还期,书名,作者,出版社,定价   
+  FROM borrowinf,books,readers 
+  WHERE borrowinf.读者编号 = readers.编号 
+  AND  books.编号 = borrowinf.图书编号 
+  AND  readers.姓名 = '王立群';
+</code></pre>
+      </li>
+    </ul>
+
+    <p><img src="http://d.pr/i/kxV4.png" alt="" /></p>
+  </li>
+  <li>
+    <p>查询类型为“研究生”的读者信息。</p>
+
+    <ul>
+      <li>
+        <p>一开始输入：</p>
+
+        <pre><code>  SELECT   readers.编号, 姓名, 已借数量,  图书编号,  书名   
+   FROM readers, borrowinf, books 
+   WHERE readers.读者类型 = 2 AND  
+   readers.编号 = borrowinf. 读者编号 AND  
+   books.编号 = borrowinf. 图书编号;
+</code></pre>
+      </li>
+      <li>
+        <p>结果报错：</p>
+
+        <pre><code>  ERROR 1052 (23000): Column '编号' in field list is ambiguous
+</code></pre>
+      </li>
+      <li>
+        <p>是因为第一行的「编号」是模凌两可的，无法辨别，必须加上前缀！</p>
+
+        <pre><code>  SELECT readers.编号, 姓名, 已借数量, 图书编号, 书名   
+  FROM readers, borrowinf, books 
+  WHERE readers.读者类型 = 2 AND  
+  readers.编号 = borrowinf. 读者编号 AND  
+  books.编号 = borrowinf. 图书编号;
+</code></pre>
+      </li>
+    </ul>
+
+    <p><img src="http://d.pr/i/QLtD.png" alt="" /></p>
+  </li>
+  <li>
+    <p>查询书名中包含文字“程序设计”的图书信息。</p>
+  </li>
+  <li>
+    <p>查询图书馆的藏书量。</p>
+  </li>
+  <li>
+    <p>查询图书馆的图书总值。</p>
+  </li>
+  <li>
+    <p>查询出版社的馆藏图书数量。</p>
+  </li>
+  <li>
+    <p>查询“2007-1-1”至“2007-12-31”各类读者的借阅数量。</p>
+  </li>
+  <li>
+    <p>查询“2007-1-1”至“2007-12-31”作者为“梁晓峰”的图书的借阅情况。</p>
+  </li>
+  <li>
+    <p>查询借阅了作者为“张大海”的图书的读者编号和图书编号。</p>
+  </li>
+  <li>
+    <p>查询所有教师的借阅图书情况，包括读者编号、姓名和已借数量。</p>
+  </li>
+  <li>
+    <p>查询所有书名为“C语言程序设计”的读者编号和借阅日期。</p>
+  </li>
+  <li>
+    <p>查询借阅日期与至少一位读者借阅日期相同的所有读者编号和姓名。</p>
+  </li>
+  <li>
+    <p>查询所有研究生借阅图书的情况，包括姓名、已借数量、所借书名、借期和还期。</p>
+  </li>
+  <li>
+    <p>查询“蓝天”出版社出版的图书借阅情况，包括读者编号、借期、还期。用连接查询和子查询两种方法实现。</p>
+  </li>
+  <li>
+    <p>查询没有借阅“青山”出版社图书的读者编号。</p>
+  </li>
+</ol>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -594,6 +891,10 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/11/04/shu-ju-ku-shi-yan-bao-gao-3/">数据库实验报告3</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/11/04/shu-ju-ku-shi-yan-bao-gao-2/">数据库实验报告2</a>
