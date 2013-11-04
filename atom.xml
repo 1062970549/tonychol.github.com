@@ -4,7 +4,7 @@
   <title><![CDATA[TonyChol]]></title>
   <link href="http://TonyChol.github.io/atom.xml" rel="self"/>
   <link href="http://TonyChol.github.io/"/>
-  <updated>2013-11-04T20:39:59+08:00</updated>
+  <updated>2013-11-04T20:55:23+08:00</updated>
   <id>http://TonyChol.github.io/</id>
   <author>
     <name><![CDATA[TonyChol]]></name>
@@ -18,9 +18,7 @@
     <link href="http://TonyChol.github.io/blog/2013/11/04/shu-ju-ku-shi-yan-bao-gao-3/"/>
     <updated>2013-11-04T20:33:00+08:00</updated>
     <id>http://TonyChol.github.io/blog/2013/11/04/shu-ju-ku-shi-yan-bao-gao-3</id>
-    <content type="html"><![CDATA[<h1 id="section">数据库实验报告3</h1>
-
-<h4 id="section-1">本次实验报告的内容是按照要求，建立图书管理系统的数据库。</h4>
+    <content type="html"><![CDATA[<h4 id="section">本次实验报告的内容是按照要求，建立图书管理系统的数据库。</h4>
 
 <ol>
   <li>
