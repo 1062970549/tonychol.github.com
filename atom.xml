@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[TonyChol]]></title>
   <link href="http://TonyChol.github.io/atom.xml" rel="self"/>
   <link href="http://TonyChol.github.io/"/>
-  <updated>2013-11-04T20:19:55+08:00</updated>
+  <updated>2013-11-04T20:30:17+08:00</updated>
   <id>http://TonyChol.github.io/</id>
   <author>
     <name><![CDATA[TonyChol]]></name>
@@ -18,398 +18,450 @@
     <link href="http://TonyChol.github.io/blog/2013/11/04/shu-ju-ku-shi-yan-bao-gao-2/"/>
     <updated>2013-11-04T20:18:00+08:00</updated>
     <id>http://TonyChol.github.io/blog/2013/11/04/shu-ju-ku-shi-yan-bao-gao-2</id>
-    <content type="html"><![CDATA[<h3>上机实验2步骤</h3>
+    <content type="html"><![CDATA[<h3 id="section">上机实验2步骤</h3>
 
 <ul>
-<li><p>创建数据库</p>
+  <li>创建数据库
+    <ul>
+      <li>
+        <p>登陆MySQL：在终端输入命令：</p>
 
-<ul>
-<li><p>登陆MySQL：在终端输入命令：</p>
+        <pre><code>  mysql -p -u root
+</code></pre>
+      </li>
+      <li>
+        <p>输入命令：</p>
 
-<pre><code>  mysql -p -u root
-</code></pre></li>
-<li><p>输入命令：</p>
+        <pre><code>  CREATE DATABASE mysqlTest;
+</code></pre>
+      </li>
+      <li>
+        <p>终端提示数据库创建成功：</p>
 
-<pre><code>  CREATE DATABASE mysqlTest;
-</code></pre></li>
-<li><p>终端提示数据库创建成功：</p>
+        <pre><code>  Query OK, 1 row affected (0.02 sec)
+</code></pre>
+      </li>
+    </ul>
 
-<pre><code>  Query OK, 1 row affected (0.02 sec)
-</code></pre></li>
-</ul>
+    <p><img src="http://d.pr/i/MTEO.png" width="640" />
+  * 在终端输入以下命令以查看创建的数据库：</p>
 
-
-<p>  <img src="http://d.pr/i/MTEO.png" width="640" /></p>
-
-<ul>
-<li><p>在终端输入以下命令以查看创建的数据库：</p>
-
-<pre><code>  SHOW DATABASES;
-</code></pre></li>
-<li><p>可以看到出现了新创建的数据库。</p></li>
-</ul>
-
-
-<p>  <img src="http://d.pr/i/vX4b.png" width="640" /></p>
-
-<ul>
-<li><p>删除数据库：</p>
-
-<pre><code>  DROP DATABASE mysqlTest;
+    <pre><code>      SHOW DATABASES;
 </code></pre>
 
-<p>  这样就删除了mysqlTest这个数据库。</p></li>
-</ul>
+    <ul>
+      <li>可以看到出现了新创建的数据库。</li>
+    </ul>
 
+    <p><img src="http://d.pr/i/vX4b.png" width="640" /></p>
 
-<p>  <img src="http://d.pr/i/f9pc.png" width="640"></p></li>
-<li><p>创建表，更改表和删除表</p>
+    <ul>
+      <li>
+        <p>删除数据库：</p>
 
-<ul>
-<li>创建表
-
-<ol>
-<li><p> 新建一个数据库：</p>
-
-<pre><code>  CREATE DATABASE schedule;
-</code></pre></li>
-<li><p> 在这个数据库建表之前要使用此数据库：</p>
-
-<pre><code>  USE schedule;
-</code></pre></li>
-<li><p>  输入命令：</p>
-
-<pre><code>  CREATE TABLE classTable
-  (
-      class_name VARCHAR(15) NOT NULL,
-      class_date DATE NOT NULL
-  );
+        <pre><code>  DROP DATABASE mysqlTest;
 </code></pre>
 
-<ul>
-<li>这里的classTable表示我要在「schedule」这个数据库里建立「classTable」的表格，括号里面的内容是表格的呈现的属性名称，对应的数据类型以及相应的数据属性，也就是「NULL」和「NOT NULL」。</li>
-</ul>
-</li>
-<li><p> 创建表格之后可以查看这个表格的结构，输入命令：</p>
+        <p>这样就删除了mysqlTest这个数据库。</p>
+      </li>
+    </ul>
 
-<pre><code>  DESCRIBE classTable;
+    <p><img src="http://d.pr/i/f9pc.png" width="640" /></p>
+  </li>
+  <li>
+    <p>创建表，更改表和删除表</p>
+
+    <ul>
+      <li>创建表
+        <ol>
+          <li>
+            <p>新建一个数据库：</p>
+
+            <pre><code> CREATE DATABASE schedule;
+</code></pre>
+          </li>
+          <li>
+            <p>在这个数据库建表之前要使用此数据库：</p>
+
+            <pre><code> USE schedule;
+</code></pre>
+          </li>
+          <li>
+            <p>输入命令：</p>
+
+            <pre><code>CREATE TABLE classTable
+(
+    class_name VARCHAR(15) NOT NULL,
+    class_date DATE NOT NULL
+);
 </code></pre>
 
-<p>  可以在终端中得到一个表格（如图）：</p></li>
-</ol>
-</li>
-</ul>
+            <ul>
+              <li>这里的classTable表示我要在「schedule」这个数据库里建立「classTable」的表格，括号里面的内容是表格的呈现的属性名称，对应的数据类型以及相应的数据属性，也就是「NULL」和「NOT NULL」。</li>
+            </ul>
+          </li>
+          <li>
+            <p>创建表格之后可以查看这个表格的结构，输入命令：</p>
 
-
-<p>  <img src="http://d.pr/i/fk8C.png" width="640"></p>
-
-<ul>
-<li><p>更改表</p>
-
-<ol>
-<li><p> 重命名表格</p>
-
-<pre><code>  ALTER TABLE classTable RENAME timetable;
+            <pre><code> DESCRIBE classTable;
 </code></pre>
 
-<p>  <img src="http://d.pr/i/hpNj.png" alt="" /></p></li>
-<li><p> 向表中添加一列：</p>
+            <p>可以在终端中得到一个表格（如图）：</p>
+          </li>
+        </ol>
+      </li>
+    </ul>
 
-<pre><code>  ALTER TABLE timetable ADD id int;
+    <p><img src="http://d.pr/i/fk8C.png" width="640" /></p>
+
+    <ul>
+      <li>
+        <p>更改表</p>
+
+        <ol>
+          <li>
+            <p>重命名表格</p>
+
+            <pre><code> ALTER TABLE classTable RENAME timetable;
 </code></pre>
 
-<p>  <img src="http://d.pr/i/anyQ.png" alt="" /></p></li>
-<li><p> 删除表中的一列：</p>
+            <p><img src="http://d.pr/i/hpNj.png" alt="" /></p>
+          </li>
+          <li>
+            <p>向表中添加一列：</p>
 
-<pre><code>  ALTER TABLE timetable DROP id;
+            <pre><code> ALTER TABLE timetable ADD id int;
 </code></pre>
 
-<p>  <img src="http://d.pr/i/yZVP.png" alt="" /></p></li>
-<li><p> 修改一个列的数据类型：</p>
+            <p><img src="http://d.pr/i/anyQ.png" alt="" /></p>
+          </li>
+          <li>
+            <p>删除表中的一列：</p>
 
-<pre><code>  ALTER TABLE timetable MODIFY class_name VARCHAR(50);
+            <pre><code> ALTER TABLE timetable DROP id;
 </code></pre>
 
-<p>  <img src="http://d.pr/i/qhaw.png" alt="" /></p></li>
-<li><p> 重命名一个列：</p>
+            <p><img src="http://d.pr/i/yZVP.png" alt="" /></p>
+          </li>
+          <li>
+            <p>修改一个列的数据类型：</p>
 
-<pre><code>  ALTER TABLE timetable CHANGE COLUMN class_name class varchar(50);
+            <pre><code> ALTER TABLE timetable MODIFY class_name VARCHAR(50);
 </code></pre>
 
-<p>  <img src="http://d.pr/i/wtMH.png" alt="" /></p></li>
-</ol>
+            <p><img src="http://d.pr/i/qhaw.png" alt="" /></p>
+          </li>
+          <li>
+            <p>重命名一个列：</p>
 
-
-<p>  <strong>最终修改过后的表格如图：</strong></p>
-
-<p>  <img src="http://d.pr/i/ePeV.png" alt="" /></p></li>
-<li><p>删除表</p>
-
-<pre><code>  DROP TABLE testtable;
-  //此步为删除一个叫做「testtable」的表格。
+            <pre><code> ALTER TABLE timetable CHANGE COLUMN class_name class varchar(50);
 </code></pre>
 
-<p>  <img src="http://d.pr/i/w8PF.png" alt="" /></p>
+            <p><img src="http://d.pr/i/wtMH.png" alt="" /></p>
+          </li>
+        </ol>
 
-<p>  删除列已经在「更改表」中提及。</p></li>
-<li><p>对表格进行查询</p>
+        <p><strong>最终修改过后的表格如图：</strong></p>
 
-<ol>
-<li><p> 基本查询：</p>
+        <p><img src="http://d.pr/i/ePeV.png" alt="" /></p>
+      </li>
+      <li>
+        <p>删除表</p>
 
-<pre><code>  SELECT * from timetable;
+        <pre><code>  DROP TABLE testtable;
+  //此步为删除一个叫做「testtable」的表格。   ![](http://d.pr/i/w8PF.png)
 </code></pre>
 
-<p>  这个时候的截图是这个样子（提示Empty set）
-<img src="http://d.pr/i/vRon.png" alt="" /></p>
+        <p>删除列已经在「更改表」中提及。</p>
+      </li>
+      <li>
+        <p>对表格进行查询</p>
 
-<p>  这个时候应该给表格增加内容给：</p>
+        <ol>
+          <li>
+            <p>基本查询：</p>
 
-<p>  <img src="http://d.pr/i/CRgM.png" alt="" /></p>
-
-<p>  此时表timetable增加了一行，也就是一个记录。</p>
-
-<p>  这个时候再次执行命令：</p>
-
-<pre><code>  SELECT * from timetable;
+            <pre><code> SELECT * from timetable;
 </code></pre>
 
-<p>  就看到了新的记录。
-  <img src="http://d.pr/i/Rj4R.png" alt="" /></p></li>
-<li><p>WHERE 子句：</p>
+            <p>这个时候的截图是这个样子（提示Empty set）
+  <img src="http://d.pr/i/vRon.png" alt="" /></p>
+          </li>
+        </ol>
 
-<ul>
-<li>先给表格添加额外的列：</li>
-</ul>
+        <p>这个时候应该给表格增加内容给：</p>
 
+        <p><img src="http://d.pr/i/CRgM.png" alt="" /></p>
 
-<hr />
+        <p>此时表timetable增加了一行，也就是一个记录。</p>
 
-<pre><code> //添加「学分」属性
+        <p>这个时候再次执行命令：</p>
+
+        <pre><code>  SELECT * from timetable;
+</code></pre>
+
+        <p>就看到了新的记录。
+  <img src="http://d.pr/i/Rj4R.png" alt="" /></p>
+      </li>
+    </ul>
+
+    <ol>
+      <li>
+        <p>WHERE 子句：</p>
+
+        <ul>
+          <li>先给表格添加额外的列：</li>
+        </ul>
+
+        <hr />
+
+        <pre><code> //添加「学分」属性
  ALTER TABLE timetable ADD credit int;
  //修改「class_date」成「class_day」，显示星期几
  ALTER TABLE timetable CHANGE COLUMN class_date class_day VARCHAR(10);
  desc timetable;
 </code></pre>
 
-<p> <img src="http://d.pr/i/1vRC.png" alt="" /></p>
+        <p><img src="http://d.pr/i/1vRC.png" alt="" /></p>
 
-<ul>
-<li>再给表格加上几条记录：</li>
-</ul>
+        <ul>
+          <li>再给表格加上几条记录：</li>
+        </ul>
 
+        <hr />
 
-<hr />
-
-<pre><code> INSERT INTO timetable VALUES ('changweifenfangcheng', 'Mon', 3);
+        <pre><code> INSERT INTO timetable VALUES ('changweifenfangcheng', 'Mon', 3);
  INSERT INTO timetable VALUES ('MySQL', 'Wed', 3);
  INSERT INTO timetable VALUES ('data analysis', 'Fri', 3);
  INSERT INTO timetable VALUES ('career planning','Wen', 2);
  SELECT * from timetable;
 </code></pre>
 
-<p> <img src="http://d.pr/i/nj8y.png" alt="" /></p>
+        <p><img src="http://d.pr/i/nj8y.png" alt="" />				</p>
 
-<ul>
-<li>开始查询：</li>
-</ul>
+        <ul>
+          <li>开始查询：</li>
+        </ul>
 
+        <hr />
 
-<hr />
-
-<pre><code> //查询2学分的课程
- SELECT * FROM timetable WHERE credit = 2;
+        <pre><code> //查询2学分的课程
+ SELECT * FROM timetable WHERE credit = 2;  ![](http://d.pr/i/7jUC.png)
 </code></pre>
 
-<p> <img src="http://d.pr/i/7jUC.png" alt="" /></p>
+        <ul>
+          <li>
+            <p>在表格中进行插入：</p>
 
-<ul>
-<li><p>在表格中进行插入：</p>
-
-<pre><code>  //插入课程：马克思
+            <pre><code>  //插入课程：马克思
   INSERT INTO timeable VALUES ('Makesi', 'Mon', 3);
-</code></pre></li>
-</ul>
+</code></pre>
+          </li>
+        </ul>
 
+        <p><img src="http://d.pr/i/9ijG.png" alt="" /></p>
 
-<p> <img src="http://d.pr/i/9ijG.png" alt="" /></p>
+        <ul>
+          <li>
+            <p>删除某行：</p>
 
-<ul>
-<li><p>删除某行：</p>
-
-<pre><code>  //删除课程：马克思
+            <pre><code>  //删除课程：马克思
   DELETE FROM timetable WHERE class = 'Makesi';
-</code></pre></li>
-</ul>
+</code></pre>
+          </li>
+        </ul>
 
+        <p><img src="http://d.pr/i/JVrU.png" alt="" /></p>
 
-<p> <img src="http://d.pr/i/JVrU.png" alt="" /></p>
+        <ul>
+          <li>
+            <p>更改数据：</p>
 
-<ul>
-<li><p>更改数据：</p>
-
-<pre><code>  //修改课程「MySQL」为「Database」
+            <pre><code>  //修改课程「MySQL」为「Database」
   UPDATE timetable SET class = 'Database' WHERE class = 'MySQL';
-</code></pre></li>
-</ul>
+</code></pre>
+          </li>
+        </ul>
 
+        <p><img src="http://d.pr/i/WHrP.png" alt="" /></p>
 
-<p> <img src="http://d.pr/i/WHrP.png" alt="" /></p>
+        <ul>
+          <li>
+            <p>这里遇到了一些问题：<strong>当中最大的问题就是无法插入带有中文字符的记录</strong>:</p>
 
-<ul>
-<li><p>这里遇到了一些问题：<strong>当中最大的问题就是无法插入带有中文字符的记录</strong>:</p>
+            <p>一旦输入中文，就会有如下提示：</p>
 
-<p>  一旦输入中文，就会有如下提示：</p>
-
-<pre><code>  Incorrect string value: '\xE5\x90\x8C\xE5\xAD\xA6' 
+            <pre><code>  Incorrect string value: '\xE5\x90\x8C\xE5\xAD\xA6' 
 </code></pre>
 
-<p>  <img src="http://d.pr/i/wsfm.png" alt="" /></p>
+            <p><img src="http://d.pr/i/wsfm.png" alt="" /></p>
 
-<ul>
-<li>如何解决呢？？</li>
-</ul>
+            <ul>
+              <li>如何解决呢？？</li>
+            </ul>
 
+            <p>只须在创建数据库的时候加上参数：</p>
 
-<p>  只须在创建数据库的时候加上参数：</p>
-
-<pre><code>      default charset utf8 collate utf8_unicode_ci;
+            <pre><code>      default charset utf8 collate utf8_unicode_ci;
 </code></pre>
 
-<p>  例如：</p>
+            <p>例如：</p>
 
-<pre><code>      create database cc default charset utf8 collate utf8_unicode_ci;
+            <pre><code>      create database cc default charset utf8 collate utf8_unicode_ci;
 </code></pre>
 
-<p>  这样子在插入中文记录的时候就不会再报错了。</p></li>
-</ul>
-</li>
-</ol>
-</li>
-</ul>
-</li>
-<li><p>视图</p>
+            <p>这样子在插入中文记录的时候就不会再报错了。</p>
+          </li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p>视图</p>
 
-<p>  首先视图是什么？</p>
+    <p>首先视图是什么？</p>
 
-<blockquote><p>视图是一个虚拟的表，可以理解成现有表格的引用。
+    <blockquote>
+      <p>视图是一个虚拟的表，可以理解成现有表格的引用。
 作用在于筛选有用的数据
-每当查询视图时，MySQL通过使用 SQL 语句来重建数据。</p></blockquote>
+每当查询视图时，MySQL通过使用 SQL 语句来重建数据。</p>
+    </blockquote>
 
-<ul>
-<li><p>创建视图的格式：</p>
+    <ul>
+      <li>
+        <p>创建视图的格式：</p>
 
-<pre><code>  CREATE VIEW view_name AS
+        <pre><code>  CREATE VIEW view_name AS
   SELECT column_name(s)
   FROM table_name
   WHERE ......
-</code></pre></li>
-<li><p>具体操作：</p>
+</code></pre>
+      </li>
+      <li>
+        <p>具体操作：</p>
 
-<pre><code>  CREATE VIEW threeCredit AS
+        <pre><code>  CREATE VIEW threeCredit AS
   SELECT class 
-  FROM timetable
-  WHERE credit = 3;
-</code></pre></li>
-</ul>
+  		FROM timetable
+  		WHERE credit = 3;
+</code></pre>
+      </li>
+    </ul>
 
+    <p><img src="http://d.pr/i/NbK.png" alt="" /></p>
 
-<p>  <img src="http://d.pr/i/NbK.png" alt="" /></p>
+    <ul>
+      <li>再删除表中的「抽象代数」，试试看更新「threeCredit」视图：</li>
+    </ul>
 
-<ul>
-<li><p>再删除表中的「抽象代数」，试试看更新「threeCredit」视图：</p>
+  		SELECT * from timetable;
 
-<pre><code>  SELECT * from timetable;
-</code></pre></li>
-</ul>
+    <p><img src="http://d.pr/i/GHKm.png" alt="" /></p>
 
+  		DELETE FROM timetable WHERE class = ‘抽象代数’;
 
-<p>  <img src="http://d.pr/i/GHKm.png" alt="" /></p>
+    <p><img src="http://d.pr/i/pOIN.png" alt="" /></p>
 
-<pre><code>      DELETE FROM timetable WHERE class = '抽象代数';
+  		SELECT * FROM threeCredit;
+  		//查询视图；
+
+    <p><img src="http://d.pr/i/EI3o.png" alt="" /></p>
+
+    <p><strong>这说明只要原表格的数据更改了变化了，那么视图里的数据也会更着改变，即视图可以看做是原表格的引用！</strong></p>
+
+    <ul>
+      <li>
+        <p>视图的更新：</p>
+      </li>
+      <li>
+        <p>更新视图的 SQL 语句格式：</p>
+      </li>
+    </ul>
+
+  		ALTER VIEW view_name AS
+    <pre><code>      SELECT column_name(s)
+      FROM table_name
+      WHERE ......
 </code></pre>
 
-<p>  <img src="http://d.pr/i/pOIN.png" alt="" /></p>
+    <ul>
+      <li>
+        <p>具体操作（给原来的视图加上 class_day 一列）</p>
 
-<pre><code>      SELECT * FROM threeCredit;
-      //查询视图；
-</code></pre>
-
-<p>  <img src="http://d.pr/i/EI3o.png" alt="" /></p>
-
-<p>  <strong>这说明只要原表格的数据更改了变化了，那么视图里的数据也会更着改变，即视图可以看做是原表格的引用！</strong></p>
-
-<ul>
-<li><p>视图的更新：</p></li>
-<li><p>更新视图的 SQL 语句格式：</p>
-
-<pre><code>  ALTER VIEW view_name AS
-  SELECT column_name(s)
-  FROM table_name
-  WHERE ......
-</code></pre></li>
-<li><p>具体操作（给原来的视图加上 class_day 一列）</p>
-
-<pre><code>  ALTER VIEW threeCredit AS
+        <pre><code>  ALTER VIEW threeCredit AS
   SELECT class,class_day
   FROM timetable
   WHERE credit = 3;
-</code></pre></li>
-</ul>
+</code></pre>
+      </li>
+    </ul>
 
+    <p><img src="http://d.pr/i/HknD.png" alt="" /></p>
+  </li>
+  <li>
+    <p>索引的建立</p>
 
-<p>  <img src="http://d.pr/i/HknD.png" alt="" /></p></li>
-<li><p>索引的建立</p>
+    <ul>
+      <li>
+        <p>「索引」的用途：</p>
 
-<ul>
-<li><p>「索引」的用途：</p>
+        <ul>
+          <li>在表中创建索引，以便更加快速高效地查询数据。</li>
+        </ul>
+      </li>
+      <li>
+        <p>索引建立的 SQL 语句格式：</p>
 
-<ul>
-<li>在表中创建索引，以便更加快速高效地查询数据。</li>
-</ul>
-</li>
-<li><p>索引建立的 SQL 语句格式：</p>
-
-<pre><code>  CREATE INDEX index_name
+        <pre><code>  CREATE INDEX index_name
   ON table_name (column_name)
-</code></pre></li>
-<li><p><strong>如果希望以降序(升序)索引某个列中的值，可以在列名称之后添加保留字 DESC（ASC）：</strong></p></li>
-<li><p><strong>假如希望索引不止一个列，也可以在括号中列出这些列的名称，用逗号隔开：</strong></p></li>
-<li><p>具体操作:</p>
+</code></pre>
+      </li>
+      <li>
+        <p><strong>如果希望以降序(升序)索引某个列中的值，可以在列名称之后添加保留字 DESC（ASC）：</strong></p>
+      </li>
+      <li>
+        <p><strong>假如希望索引不止一个列，也可以在括号中列出这些列的名称，用逗号隔开：</strong></p>
+      </li>
+      <li>
+        <p>具体操作:</p>
 
-<ul>
-<li><p>创建一个简单的索引，名为 &ldquo;classIndex&#8221;，在 timetable 表的 class 列：</p>
+        <ul>
+          <li>
+            <p>创建一个简单的索引，名为 “classIndex”，在 timetable 表的 class 列：</p>
 
-<pre><code>  CREATE INDEX classIndex
+            <pre><code>  CREATE INDEX classIndex
   ON timetable(class);
-</code></pre></li>
-</ul>
+</code></pre>
+          </li>
+        </ul>
 
+        <p><img src="http://d.pr/i/z5J3.png" alt="" /></p>
 
-<p>  <img src="http://d.pr/i/z5J3.png" alt="" /></p>
+        <ul>
+          <li>
+            <p>创建多列的索引，加上排序：</p>
 
-<ul>
-<li><p>创建多列的索引，加上排序：</p>
+            <pre><code>  CREATE INDEX classIndexDESC
+  ON timetable(class,credit DESC);		
+</code></pre>
+          </li>
+        </ul>
 
-<pre><code>  CREATE INDEX classIndexDESC
-  ON timetable(class,credit DESC);        
-</code></pre></li>
-</ul>
+        <p><img src="http://d.pr/i/kjQk.png" alt="" /></p>
 
+        <ul>
+          <li>
+            <p>删除索引：</p>
 
-<p>  <img src="http://d.pr/i/kjQk.png" alt="" /></p>
+            <pre><code>  ALTER TABLE timetable DROP INDEX classIndexDESC;
+</code></pre>
+          </li>
+        </ul>
 
-<ul>
-<li><p>删除索引：</p>
-
-<pre><code>  ALTER TABLE timetable DROP INDEX classIndexDESC;
-</code></pre></li>
-</ul>
-
-
-<p>  <img src="http://d.pr/i/rUdz.png" alt="" /></p></li>
-</ul>
-</li>
+        <p><img src="http://d.pr/i/rUdz.png" alt="" /></p>
+      </li>
+    </ul>
+  </li>
 </ul>
 
 ]]></content>
