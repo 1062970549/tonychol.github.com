@@ -3,7 +3,7 @@
   <title><![CDATA[TonyChol]]></title>
   <link href="http://TonyChol.github.io/atom.xml" rel="self"/>
   <link href="http://TonyChol.github.io/"/>
-  <updated>2013-11-19T00:55:00+08:00</updated>
+  <updated>2013-11-19T01:21:19+08:00</updated>
   <id>http://TonyChol.github.io/</id>
   <author>
     <name><![CDATA[TonyChol]]></name>
@@ -118,6 +118,20 @@
   <li>Write an article based on our models and result for the local newspaper.</li>
 </ol>
 
+<h1 id="assumption">Assumption</h1>
+
+<ol>
+  <li>Assume the buildings we concentrate on are square multi-storey construction.</li>
+  <li>Define the emergency in our case is the one which forces everyone in the room to notice the danger and make them escape from the danger.</li>
+  <li>The The devastating attacts(such as the tsunami，terrorist attack，etc) are excluded.</li>
+  <li>……</li>
+</ol>
+
+<h1 id="section-1">教训</h1>
+<ol>
+  <li>应该有一个记录员，记下任何在讨论过程当中值得深入的东西。</li>
+  <li></li>
+</ol>
 ]]></content>
   </entry>
   
