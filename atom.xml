@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-
   <title><![CDATA[TonyChol]]></title>
   <link href="http://TonyChol.github.io/atom.xml" rel="self"/>
   <link href="http://TonyChol.github.io/"/>
-  <updated>2013-11-06T07:17:01+08:00</updated>
+  <updated>2013-11-19T00:25:38+08:00</updated>
   <id>http://TonyChol.github.io/</id>
   <author>
     <name><![CDATA[TonyChol]]></name>
@@ -12,6 +11,143 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Modeling!]]></title>
+    <link href="http://TonyChol.github.io/blog/2013/11/19/modeling/"/>
+    <updated>2013-11-19T00:22:00+08:00</updated>
+    <id>http://TonyChol.github.io/blog/2013/11/19/modeling</id>
+    <content type="html"><![CDATA[<h1 id="section">大纲</h1>
+<ol>
+  <li>摘要</li>
+  <li>Introduction</li>
+  <li>问题重述</li>
+  <li>
+    <p>模型</p>
+
+    <ol>
+      <li>
+        <p>基本模型</p>
+
+        <ol>
+          <li>
+            <p>正常情况</p>
+
+            <ul>
+              <li>
+                <p>区域划分的标准（定性）</p>
+
+                <ol>
+                  <li>固定面积人数</li>
+                  <li>流通人数</li>
+                </ol>
+              </li>
+              <li>
+                <p>考虑标准（定量）</p>
+
+                <ol>
+                  <li>人员密度</li>
+                  <li><strong><em>可使用面积/总面积</em></strong>（室内的障碍物/物品）</li>
+                  <li>流动率</li>
+                </ol>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>紧急情况</p>
+
+            <p>解决!</p>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <p>改进模型</p>
+
+        <ol>
+          <li>
+            <p>考虑因素</p>
+
+            <ul>
+              <li>
+                <p><strong>(optional)考虑利益！！！！！！</strong></p>
+              </li>
+              <li>
+                <p>舒适距离</p>
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+  <li>模型应用</li>
+  <li>优缺点</li>
+  <li>结论</li>
+  <li>写一封信</li>
+  <li>Reference</li>
+</ol>
+
+<h1 id="background">Background:</h1>
+
+<p>To simplify our model, we need to elaborate a psychological concept: <strong>safety distance</strong>.</p>
+
+<p><strong>Safety distance</strong> means the distance in which people feel comfortable with the unfamiliar people. The safety distance comes from the so-called “protective area” of 0.93m2, which is defined by the American psychologist Jane Jacobs. </p>
+
+<p><img src="http://d.pr/i/OHRF.png" alt="" /></p>
+
+<p>What’s more,we also define the construction area into three major categories: </p>
+
+<ul>
+  <li>business hall area</li>
+  <li>aisles area</li>
+  <li>storage area</li>
+</ul>
+
+<p><strong>But the only area we are interested in is the area for people’s activity(except for the bathroom, information desk, counter, etc.), which we call the “real area”.</strong></p>
+
+<p>In this case, storage area are excluded. The “real area”  share 65% of its whole business hall area.</p>
+
+<p><img src="http://d.pr/i/zCf.png" alt="" /></p>
+
+<h1 id="definition-of-the-problem">Definition of the problem</h1>
+
+<ol>
+  <li>In case of urgent and safe situation,establish the standard seperately for the Lawful Capacity, which means the maximun number of people for a room to accommodate.</li>
+  <li>Compare the differences among the results of different environments and rooms, such as  a cafeteria with tables and chairs, a gymnasium, a public swimming pool, and a lecture hall with rows and aisles.</li>
+  <li>Do the simulation and compare our models to posted requirements or codes .</li>
+  <li>Write an article based on our models and result for the local newspaper.</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[我的 iPhone Apps]]></title>
+    <link href="http://TonyChol.github.io/blog/2013/11/09/wo-de-iphone-apps/"/>
+    <updated>2013-11-09T00:35:00+08:00</updated>
+    <id>http://TonyChol.github.io/blog/2013/11/09/wo-de-iphone-apps</id>
+    <content type="html"><![CDATA[<p>最近如了一台iPhone，正式踏上iOS的旅程，（我至今没有很好地用过安卓啊！！）也想分享一下我在iPhone 下的程序。</p>
+
+<p>首先我有两个Apple ID，一个中国区，一个美国区。</p>
+
+<p>中国区的账号用于方便地充值买应用，而美国区的账号就是用来充“Free my apps”的积分的</p>
+
+<p>ˊ_&gt;ˋ</p>
+
+<p>关于Free my apps这个服务，我之后详细说，现在你们看到这里，我就先热烈推荐一下！</p>
+
+<p>首先放出截图！</p>
+
+<p><img src="http://d.pr/i/enrO.png" alt="" /></p>
+
+<p><img src="http://d.pr/i/jMtO.png" alt="" /></p>
+
+<p><img src="http://d.pr/i/H6nX.png" alt="" /></p>
+
+<p><img src="http://d.pr/i/N35h.png" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[数据库实验报告3]]></title>

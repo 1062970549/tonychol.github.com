@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Modeling! - TonyChol</title>
+  <meta name="author" content="TonyChol">
+
+  
+  <meta name="description" content="大纲 摘要 Introduction 问题重述 模型 基本模型 正常情况 区域划分的标准（定性） 固定面积人数 流通人数 考虑标准（定量） 人员密度 可使用面积/总面积（室内的障碍物/物品） 流动率 紧急情况 解决! 改进模型 考虑因素 (optional)考虑利益！！！！！！ 舒适距离 模型应用 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://TonyChol.github.io/blog/2013/11/19/modeling/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="TonyChol" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <img src="/images/ah_frame_transparent.png" />
+  <h1><a href="/">TonyChol</a></h1>
+</hgroup>
+
+</header>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Modeling!</h1>
+    
+  </header>
+
+
+
+
+
+<div class="entry-content"><h1 id="section">大纲</h1>
+<ol>
+  <li>摘要</li>
+  <li>Introduction</li>
+  <li>问题重述</li>
+  <li>
+    <p>模型</p>
+
+    <ol>
+      <li>
+        <p>基本模型</p>
+
+        <ol>
+          <li>
+            <p>正常情况</p>
+
+            <ul>
+              <li>
+                <p>区域划分的标准（定性）</p>
+
+                <ol>
+                  <li>固定面积人数</li>
+                  <li>流通人数</li>
+                </ol>
+              </li>
+              <li>
+                <p>考虑标准（定量）</p>
+
+                <ol>
+                  <li>人员密度</li>
+                  <li><strong><em>可使用面积/总面积</em></strong>（室内的障碍物/物品）</li>
+                  <li>流动率</li>
+                </ol>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>紧急情况</p>
+
+            <p>解决!</p>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <p>改进模型</p>
+
+        <ol>
+          <li>
+            <p>考虑因素</p>
+
+            <ul>
+              <li>
+                <p><strong>(optional)考虑利益！！！！！！</strong></p>
+              </li>
+              <li>
+                <p>舒适距离</p>
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+  <li>模型应用</li>
+  <li>优缺点</li>
+  <li>结论</li>
+  <li>写一封信</li>
+  <li>Reference</li>
+</ol>
+
+<h1 id="background">Background:</h1>
+
+<p>To simplify our model, we need to elaborate a psychological concept: <strong>safety distance</strong>.</p>
+
+<p><strong>Safety distance</strong> means the distance in which people feel comfortable with the unfamiliar people. The safety distance comes from the so-called “protective area” of 0.93m2, which is defined by the American psychologist Jane Jacobs. </p>
+
+<p><img src="http://d.pr/i/OHRF.png" alt="" /></p>
+
+<p>What’s more,we also define the construction area into three major categories: </p>
+
+<ul>
+  <li>business hall area</li>
+  <li>aisles area</li>
+  <li>storage area</li>
+</ul>
+
+<p><strong>But the only area we are interested in is the area for people’s activity(except for the bathroom, information desk, counter, etc.), which we call the “real area”.</strong></p>
+
+<p>In this case, storage area are excluded. The “real area”  share 65% of its whole business hall area.</p>
+
+<p><img src="http://d.pr/i/zCf.png" alt="" /></p>
+
+<h1 id="definition-of-the-problem">Definition of the problem</h1>
+
+<ol>
+  <li>In case of urgent and safe situation,establish the standard seperately for the Lawful Capacity, which means the maximun number of people for a room to accommodate.</li>
+  <li>Compare the differences among the results of different environments and rooms, such as  a cafeteria with tables and chairs, a gymnasium, a public swimming pool, and a lecture hall with rows and aisles.</li>
+  <li>Do the simulation and compare our models to posted requirements or codes .</li>
+  <li>Write an article based on our models and result for the local newspaper.</li>
+</ol>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">TonyChol</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-11-19T00:22:00+08:00" pubdate data-updated="true">Nov 19<span>th</span>, 2013</time>
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/11/09/wo-de-iphone-apps/" title="Previous Post: 我的 iPhone Apps">&laquo; 我的 iPhone Apps</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/11/19/modeling/">Modeling!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/11/09/wo-de-iphone-apps/">我的 iPhone Apps</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/11/04/shu-ju-ku-shi-yan-bao-gao-3/">数据库实验报告3</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/11/04/shu-ju-ku-shi-yan-bao-gao-2/">数据库实验报告2</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/11/04/title/">title</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - TonyChol -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="/javascripts/aharris.js"></script>
+
+</body>
+</html>
