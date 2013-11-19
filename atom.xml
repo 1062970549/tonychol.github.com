@@ -3,7 +3,7 @@
   <title><![CDATA[TonyChol]]></title>
   <link href="http://TonyChol.github.io/atom.xml" rel="self"/>
   <link href="http://TonyChol.github.io/"/>
-  <updated>2013-11-19T22:19:21+08:00</updated>
+  <updated>2013-11-20T01:47:46+08:00</updated>
   <id>http://TonyChol.github.io/</id>
   <author>
     <name><![CDATA[TonyChol]]></name>
@@ -291,7 +291,8 @@ In the first model, considering it is a complex project to completely solve the 
 
 <p><img src="http://d.pr/i/Cpdw.png" alt="" /></p>
 
-<p>In the second model, </p>
+<p>In the second model, we collected some data from a shopping hall and worked out a result ,which was nearly the same with the practical information. What has amazed us is that we have made up a simple but reasonable model.<br />
+On account of what we have known, we should put forward a criteria not only considering the lawful capacity in case of the safety but also thinking about some new ways to solve the problem in the emergency,which forces everyone to flee from the building. Originally, we ruled out some disasters, which are devastating so that people can hardly survive from, like hurricane, tsunami and earthquake. After excluding the those destructive disasters, we choose to do the modeling in the emergency of fire, which we have defined as the “generic emergency”, and regard the evacuation of persons as the criteria of “lawful capacity”. In the course of our research, we have read a lot and were surprised to find out that many people have done the research of these situation. To establish the measure, we divided the area of the building into three part: business hall area, aisles area and storage area. We defined a concept called ‘real area’ among them, which represents the area for people to stay and stroll. According to our research, we could define the ‘real area’, where there is 0.74 customer and 0.10 waiter in each square meter,and it covers sixty-five percentage of the business hall area. So we can obtain the total quantity of people of the whole building and we can lead to a kind of coefficient, called “evacuation coefficient”, which help us to work out the the number of the number of people escaping from the danger. In conclusion, we can regard the number of evacuation as the lawful capacity, which is helpful for local government to set the criteria for indoor places.</p>
 
 <p>正态分布 和 球形半径
 三种类型 咖啡馆啥啥啥的~~~~~~</p>
