@@ -3,7 +3,7 @@
   <title><![CDATA[TonyChol]]></title>
   <link href="http://TonyChol.github.io/atom.xml" rel="self"/>
   <link href="http://TonyChol.github.io/"/>
-  <updated>2013-11-25T22:29:57+08:00</updated>
+  <updated>2013-11-26T00:02:15+08:00</updated>
   <id>http://TonyChol.github.io/</id>
   <author>
     <name><![CDATA[TonyChol]]></name>
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[Decision System]]></title>
-    <link href="http://TonyChol.github.io/blog/2013/11/19/decision-system/"/>
+    <link href="http://TonyChol.github.io/blog/decision-system/"/>
     <updated>2013-11-19T08:19:00+08:00</updated>
-    <id>http://TonyChol.github.io/blog/2013/11/19/decision-system</id>
+    <id>http://TonyChol.github.io/blog/decision-system</id>
     <content type="html"><![CDATA[<h1 id="section">决策支持系统</h1>
 <p><strong>第七章</strong></p>
 
@@ -118,9 +118,9 @@
   
   <entry>
     <title type="html"><![CDATA[Modeling!]]></title>
-    <link href="http://TonyChol.github.io/blog/2013/11/19/modeling/"/>
+    <link href="http://TonyChol.github.io/blog/modeling/"/>
     <updated>2013-11-19T00:22:00+08:00</updated>
-    <id>http://TonyChol.github.io/blog/2013/11/19/modeling</id>
+    <id>http://TonyChol.github.io/blog/modeling</id>
     <content type="html"><![CDATA[<h1 id="section">大纲</h1>
 <ol>
   <li>摘要</li>
@@ -323,9 +323,9 @@ In the course of our research, we have read a lot and were surprised to find out
   
   <entry>
     <title type="html"><![CDATA[我的 iPhone Apps]]></title>
-    <link href="http://TonyChol.github.io/blog/2013/11/09/wo-de-iphone-apps/"/>
+    <link href="http://TonyChol.github.io/blog/wo-de-iphone-apps/"/>
     <updated>2013-11-09T00:35:00+08:00</updated>
-    <id>http://TonyChol.github.io/blog/2013/11/09/wo-de-iphone-apps</id>
+    <id>http://TonyChol.github.io/blog/wo-de-iphone-apps</id>
     <content type="html"><![CDATA[<p>最近入了一台 iPhone ，正式踏上 iOS 的旅程，（我至今没有很好地用过安卓啊！！）也想分享一下我在iPhone 下使用的 Apps 。</p>
 
 <p>首先我有两个 Apple ID ，一个中国区，一个美国区。</p>
@@ -413,9 +413,9 @@ To be continued……</p>
   
   <entry>
     <title type="html"><![CDATA[数据库实验报告3]]></title>
-    <link href="http://TonyChol.github.io/blog/2013/11/04/shu-ju-ku-shi-yan-bao-gao-3/"/>
+    <link href="http://TonyChol.github.io/blog/shu-ju-ku-shi-yan-bao-gao-3/"/>
     <updated>2013-11-04T20:33:00+08:00</updated>
-    <id>http://TonyChol.github.io/blog/2013/11/04/shu-ju-ku-shi-yan-bao-gao-3</id>
+    <id>http://TonyChol.github.io/blog/shu-ju-ku-shi-yan-bao-gao-3</id>
     <content type="html"><![CDATA[<h4 id="section">本次实验报告的内容是按照要求，建立图书管理系统的数据库。</h4>
 
 <ol>
@@ -681,9 +681,9 @@ To be continued……</p>
   
   <entry>
     <title type="html"><![CDATA[数据库实验报告2]]></title>
-    <link href="http://TonyChol.github.io/blog/2013/11/04/shu-ju-ku-shi-yan-bao-gao-2/"/>
+    <link href="http://TonyChol.github.io/blog/shu-ju-ku-shi-yan-bao-gao-2/"/>
     <updated>2013-11-04T20:18:00+08:00</updated>
-    <id>http://TonyChol.github.io/blog/2013/11/04/shu-ju-ku-shi-yan-bao-gao-2</id>
+    <id>http://TonyChol.github.io/blog/shu-ju-ku-shi-yan-bao-gao-2</id>
     <content type="html"><![CDATA[<h3 id="section">上机实验2步骤</h3>
 
 <ul>
@@ -1135,9 +1135,9 @@ To be continued……</p>
   
   <entry>
     <title type="html"><![CDATA[title]]></title>
-    <link href="http://TonyChol.github.io/blog/2013/11/04/title/"/>
+    <link href="http://TonyChol.github.io/blog/title/"/>
     <updated>2013-11-04T20:07:00+08:00</updated>
-    <id>http://TonyChol.github.io/blog/2013/11/04/title</id>
+    <id>http://TonyChol.github.io/blog/title</id>
     <content type="html"><![CDATA[<p>这个是我的第一个 Octopress 文章！</p>
 ]]></content>
   </entry>
