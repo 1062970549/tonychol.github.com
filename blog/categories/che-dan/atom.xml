@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 扯淡 | TonyChol]]></title>
   <link href="http://TonyChol.github.io/blog/categories/che-dan/atom.xml" rel="self"/>
   <link href="http://TonyChol.github.io/"/>
-  <updated>2013-11-26T00:08:24+08:00</updated>
+  <updated>2013-11-26T09:10:10+08:00</updated>
   <id>http://TonyChol.github.io/</id>
   <author>
     <name><![CDATA[TonyChol]]></name>
@@ -51,7 +51,6 @@
     <li>Biscuit（<strong>英语党必备，背词神器</strong>）</li>
     <li>Circa（<strong>英语党必备2，英语新闻推送服务</strong>）</li>
     <li>IFTTT（<strong>好用到无法直视的触发器服务，比如「if 下雨, 给你发短信，提醒你带伞」</strong>）</li>
-    <li>Droplr（<strong>简单好用的小文件共享工具，本博客的所有图片均上传和引用自 Droplr</strong>）</li>
   </ul>
 </blockquote>
 
@@ -99,6 +98,78 @@ To be continued……</p>
 <p>好了，来得早不如来得巧，来得巧不如来得屌，突然，Google 在某天把他自家的 Reader 给休了！搞得互联网伐山捣海……悲从中来，新版的 Reeder 横空出世，忽然就觉得 Google Reader 死而复生，呜呼~</p>
 
 <p>注意……请注意 Google Reader 和 Reeder 的区别: Reeder 是一个 App，基于类似于 Google Reader 的服务: <a href="cloud.feedly.com">Feedly</a>.</p>
+
+<h3 id="dropbox">Dropbox</h3>
+
+<p>这个不说了…谁用谁知道~</p>
+
+<h3 id="grid-diary">Grid Diary</h3>
+
+<p>这个 App 是我最喜欢的 App 之一，我现在最需要一个生活小助手，每天提醒我，督促我。那么这个 App 就是你的一个很好的选择：</p>
+
+<p>他会在每天某个时段去提醒你，用过问你就个问题的方式让你回顾自己最近24个小时的行为和态度。吾日三省吾身~给100个赞都不为过！</p>
+
+<h3 id="mailbox">Mailbox</h3>
+
+<p>这个 App 也是我觉得超值的软件之一。他的最大优点就是纯手势操作，给人的感觉根本就不像是邮件的客户端，更想是 TO-DO 类型的 GTD 工具， 没错好吧……我就是拿这个 App 来当 GTD 工具来用的， 一旦有什么事情我觉得日后可以做，我通过他给自己发邮件，记录下来，随后清空大脑，在整理邮件的时候就会处理我之前想到的那些事情。因此这个 Mailbox 就真的变成了我在实施 GTD 的「收件箱」。</p>
+
+<h3 id="biscuit">Biscuit</h3>
+
+<p>我称之为「背单词利器」，想想在某一个嘈杂的街头，你掏出手机，打开 Biscuit，从上往下回顾你不会的单词，你会发现噪声根本不入耳了。因为这个 App ， 平时在路上根本就不刷朋友圈微博什么的了。 <strong>Buicuit is a time debris killer!</strong></p>
+
+<p>还有，如果在后台运行着这个 App ，你随便选中一个你不会的单词，按下 Copy ， 他会自动在通知栏给你翻译单词，这种强大的技巧我其实不怎么透露~</p>
+
+<h3 id="circa">Circa</h3>
+
+<p>同样，如果你要学好英语，一个比较好的方式就是去看国外的新闻原文，这是书面语最地道的表达方式。 那么这个叫做 Circa 的新闻服务就是你的上佳选择了，他里面囊括了国外的众多 Topics ，你选择好自己的喜好，并且 Follow 相关的新闻之后，他就会择优选择你喜欢的新闻，而且你还能知道你 Follow 的新闻的后续事件，从头到尾，你会把你关心的事情弄得很清楚。</p>
+
+<h3 id="ifttt">IFTTT</h3>
+
+<p>首先你要搞清楚什么是 <a href="https://ifttt.com/">IFTTT</a>.</p>
+
+<p><img src="http://d.pr/i/NY74.png" alt="" /></p>
+
+<p>官方网站的Slogan叫做”Put the Internet to work for you”. 
+ ifttt 支持的条件并不需要你像编程那样输入复杂的语句，你只需要挑选ifttt 提供的第三方服务里的某一个，指定它出现某种状态时，就触发另一个服务的某个动作。一切都可以在弹指间完成。  </p>
+
+<p>简单得说，「IFTTT」这个服务有效得悄无声息。他通过简单的逻辑”IF …, then … “
+比如：</p>
+
+<blockquote>
+  <p><strong>IF</strong> 我在 Instaram 上赞了一张照片, <strong>then</strong> 直接保存在我的 Dropbox 里（Dropbox是啥？ 谁用谁知道）。</p>
+</blockquote>
+
+<p>来帮助你实现一些自动化的互联网服务功能，再比如：</p>
+
+<blockquote>
+  <p>”<strong>IF</strong> 我写了一篇博客， <strong>then</strong> 在我的 Facebook 上发一条状态宣传。”</p>
+
+  <p>”<strong>IF</strong> 明天广州就要下雨， <strong>then</strong> 发短信提醒我带伞”  </p>
+</blockquote>
+
+<p>所以这个服务相当的方便，就看你怎么去创造了。</p>
+
+<p>当然很不幸的是，这样的逻辑是有漏洞的，比如：</p>
+
+<blockquote>
+  <p>你设置了”<strong>IF</strong> 我在Facebook 上发状态，<strong>then</strong> 在 Twitter 上一条推文”</p>
+</blockquote>
+
+<p>和</p>
+
+<blockquote>
+  <p>你设置了”<strong>IF</strong> 我在 Twitter 上一条推文， <strong>then</strong> 在 Facebook 上发一条状态”</p>
+</blockquote>
+
+<p>。。。。。。死循环了。</p>
+
+<p>总的来说，这些互联网服务是为你的生活提供方便的，我们不应该陷进网络里，却无视了我们所在的现实。还是那句话，有空就出门找你的小伙伴吧！他们才是你的生活。</p>
+
+<p><strong>对了！</strong></p>
+
+<blockquote>
+  <p><strong>if</strong> 转载没有注明出处， <strong>then</strong> 恋爱发卡，考试全挂，工资月光，喝水塞牙！</p>
+</blockquote>
 
 ]]></content>
   </entry>
